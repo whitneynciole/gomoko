@@ -101,7 +101,7 @@ public class GomokoGame {
         System.out.println("   " + "0 1 2 3 4 5 6 7 8 9");
     }
 
-    //winning checked
+    //method to check for winning
     public static boolean checkGameWinner(int currentPlayer, int grid[][]) {
         // four across 
         for (int row = 0; row < grid.length; row++) {
@@ -155,6 +155,7 @@ public class GomokoGame {
         return false;
     }
 
+    // method to check for a tie 
     public static boolean checkTie(int grid[][]) {
         for(int row = 3; row < grid.length; row++){
             for(int col = 0; col < 10 - 3; col++){
